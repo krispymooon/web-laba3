@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Лаба 3 — Блочная модель и позиционирование</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    /* Блочная модель */
+    .box {
+      width: 150px;
+      height: 100px;
+      background-color: lightblue;
+      margin: 10px;
+      padding: 10px;
+      border: 2px solid blue;
+    }
+
+    /* Позиционирование */
+    .relative {
+      position: relative;
+      top: 10px;
+      left: 20px;
+      background-color: lightgreen;
+    }
+
+    .absolute-container {
+      position: relative;
+      height: 150px;
+      background: #eee;
+    }
+
+    .absolute {
+      position: absolute;
+      top: 10px;
+      left: 30px;
+      width: 100px;
+      height: 100px;
+      background: orange;
+    }
+
+    /* Display */
+    .inline {
+      display: inline;
+      background: pink;
+    }
+
+    .block {
+      display: block;
+      background: lightcoral;
+      margin-top: 10px;
+    }
+
+    .inline-block {
+      display: inline-block;
+      background: lightseagreen;
+      width: 100px;
+      margin-right: 10px;
+    }
+
+    /* Float */
+    .float-example {
+      float: left;
+      width: 150px;
+      height: 80px;
+      margin-right: 10px;
+      background: violet;
+    }
+
+    .clearfix::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Блочная модель</h2>
+<div class="box">Блочный div с отступами, padding и границей</div>
+
+<h2>Позиционирование</h2>
+<div class="box relative">relative: смещён от обычного места</div>
+<div class="absolute-container">
+  <div class="absolute">absolute: позиционируется от ближайшего relative</div>
+</div>
+
+<h2>Display</h2>
+<span class="inline">inline</span>
+<span class="inline">inline</span>
+
+<div class="block">block</div>
+
+<span class="inline-block">inline-block 1</span>
+<span class="inline-block">inline-block 2</span>
+
+<h2>Float</h2>
+<div class="clearfix">
+  <div class="float-example">Float слева</div>
+  <div class="float-example">Float слева</div>
+  <p>Этот текст обтекает блоки с float</p>
+</div>
+
+</body>
+</html>

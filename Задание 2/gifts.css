@@ -1,0 +1,53 @@
+body {
+    font-family: Tahoma, sans-serif;
+    padding: 30px;
+    background-color: white;
+}
+
+.wrapper {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.subtitle {
+    color: #0071c1;
+    margin-bottom: 30px;
+}
+
+.gift-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.gift-item {
+    display: flex;
+    width: 47%;
+    align-items: flex-start;
+}
+
+.gift-item img {
+    width: 80px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.gift-text a {
+    display: inline-block;
+    font-size: 16px;
+    color: #0071c1;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.gift-text p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
+}
